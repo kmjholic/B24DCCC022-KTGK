@@ -53,11 +53,11 @@ const BangNhanVien = (props: Props) => {
 		{ title: 'Phòng ban', dataIndex: 'phongBan', key: 'phongBan', width: 160 },
 		{
 			title: 'Lương',
-			dataIndex: 'Luong',
+			dataIndex: 'luong',
 			key: 'luong',
 			width: 140,
 			align: 'right',
-			render: (value: number) => `${value.toLocaleString('vi-VN')} VND`,
+			render: (value?: number) => (typeof value === 'number' ? `${value.toLocaleString('vi-VN')} VND` : '-'),
 		},
 		{
 			title: 'Trạng thái',

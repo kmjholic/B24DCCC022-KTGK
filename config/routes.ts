@@ -36,6 +36,19 @@
 		component: './RandomUser',
 		icon: 'ArrowsAltOutlined',
 	},
+	//BÀI KTGK
+	{
+		name: 'Nhân sự',
+		path: '/quan-ly-nhan-su',
+		icon: 'TeamOutlined',
+		routes: [
+			{
+				name: 'Nhân viên',
+				path: 'nhan-vien',
+				component: './NhanSu/NhanVien',
+			},
+		],
+	},
 
 	// DANH MUC HE THONG
 	// {
